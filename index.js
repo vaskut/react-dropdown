@@ -38,6 +38,7 @@ class Dropdown extends Component {
   }
 
   componentDidMount () {
+    this.mounted = true
     document.addEventListener('click', this.handleDocumentClick, false)
     document.addEventListener('touchend', this.handleDocumentClick, false)
   }
